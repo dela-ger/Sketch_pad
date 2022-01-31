@@ -1,0 +1,53 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(250, 216, 247);
+  display: flex;
+  justify-content: center;
+  font-family: Georgia, "Times New Roman", sans-serif;
+}
+
+:root {
+  --grid-cols: 1;
+  --grid-rows: 1;
+}
+
+#container {
+  display: grid;
+  grid-template-rows: repeat(var(--grid-rows), 1fr);
+  grid-template-columns: repeat(
+    var(--grid-cols),
+    1fr
+  ); /* this creates the columns in the grid*/
+  width: 650px;
+  height: 550px;
+  border: 10px solid black;
+}
+
+.grid-item {
+  border: 1px solid grey;
+}
+
+.button-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  left: 50%;
+  padding: 20px;
+  font-size: large;
+}
+
+#resetbtn {
+  width: 100px;
+  height: 40px;
+  background-color: rgb(237, 221, 238);
+  border-radius: 5px;
+}
+
+.heading h2 {
+  text-align: center;
+}
